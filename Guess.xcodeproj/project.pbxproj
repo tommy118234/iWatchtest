@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F7781531F1DF01B00409CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7781521F1DF01B00409CD7 /* AppDelegate.swift */; };
+		6F7781551F1DF01B00409CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7781541F1DF01B00409CD7 /* ViewController.swift */; };
+		6F7781581F1DF01B00409CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7781561F1DF01B00409CD7 /* Main.storyboard */; };
+		6F77815A1F1DF01B00409CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7781591F1DF01B00409CD7 /* Assets.xcassets */; };
+		6F77815D1F1DF01B00409CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F77815B1F1DF01B00409CD7 /* LaunchScreen.storyboard */; };
+		6F7781681F1DF01B00409CD7 /* GuessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7781671F1DF01B00409CD7 /* GuessTests.swift */; };
+		6F77816D1F1DF01B00409CD7 /* Guess WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6F77816C1F1DF01B00409CD7 /* Guess WatchKit App.app */; };
+		6F7781731F1DF01B00409CD7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7781711F1DF01B00409CD7 /* Interface.storyboard */; };
+		6F7781751F1DF01B00409CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7781741F1DF01B00409CD7 /* Assets.xcassets */; };
+		6F77817C1F1DF01C00409CD7 /* Guess WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F77817B1F1DF01C00409CD7 /* Guess WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F7781811F1DF01C00409CD7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7781801F1DF01C00409CD7 /* InterfaceController.swift */; };
+		6F7781831F1DF01C00409CD7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7781821F1DF01C00409CD7 /* ExtensionDelegate.swift */; };
+		6F7781851F1DF01C00409CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7781841F1DF01C00409CD7 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F7781641F1DF01B00409CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7781471F1DF01B00409CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F77814E1F1DF01B00409CD7;
+			remoteInfo = Guess;
+		};
+		6F77816E1F1DF01B00409CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7781471F1DF01B00409CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F77816B1F1DF01B00409CD7;
+			remoteInfo = "Guess WatchKit App";
+		};
+		6F77817D1F1DF01C00409CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7781471F1DF01B00409CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F77817A1F1DF01C00409CD7;
+			remoteInfo = "Guess WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F77818C1F1DF01C00409CD7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F77817C1F1DF01C00409CD7 /* Guess WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7781901F1DF01C00409CD7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6F77816D1F1DF01B00409CD7 /* Guess WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F77814F1F1DF01B00409CD7 /* Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7781521F1DF01B00409CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F7781541F1DF01B00409CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F7781571F1DF01B00409CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F7781591F1DF01B00409CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F77815C1F1DF01B00409CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F77815E1F1DF01B00409CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7781631F1DF01B00409CD7 /* GuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7781671F1DF01B00409CD7 /* GuessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTests.swift; sourceTree = "<group>"; };
+		6F7781691F1DF01B00409CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F77816C1F1DF01B00409CD7 /* Guess WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7781721F1DF01B00409CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6F7781741F1DF01B00409CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F7781761F1DF01B00409CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F77817B1F1DF01C00409CD7 /* Guess WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Guess WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7781801F1DF01C00409CD7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6F7781821F1DF01C00409CD7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6F7781841F1DF01C00409CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F7781861F1DF01C00409CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F77814C1F1DF01B00409CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7781601F1DF01B00409CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7781781F1DF01C00409CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F7781461F1DF01B00409CD7 = {
+			isa = PBXGroup;
+			children = (
+				6F7781511F1DF01B00409CD7 /* Guess */,
+				6F7781661F1DF01B00409CD7 /* GuessTests */,
+				6F7781701F1DF01B00409CD7 /* Guess WatchKit App */,
+				6F77817F1F1DF01C00409CD7 /* Guess WatchKit Extension */,
+				6F7781501F1DF01B00409CD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F7781501F1DF01B00409CD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F77814F1F1DF01B00409CD7 /* Guess.app */,
+				6F7781631F1DF01B00409CD7 /* GuessTests.xctest */,
+				6F77816C1F1DF01B00409CD7 /* Guess WatchKit App.app */,
+				6F77817B1F1DF01C00409CD7 /* Guess WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F7781511F1DF01B00409CD7 /* Guess */ = {
+			isa = PBXGroup;
+			children = (
+				6F7781521F1DF01B00409CD7 /* AppDelegate.swift */,
+				6F7781541F1DF01B00409CD7 /* ViewController.swift */,
+				6F7781561F1DF01B00409CD7 /* Main.storyboard */,
+				6F7781591F1DF01B00409CD7 /* Assets.xcassets */,
+				6F77815B1F1DF01B00409CD7 /* LaunchScreen.storyboard */,
+				6F77815E1F1DF01B00409CD7 /* Info.plist */,
+			);
+			path = Guess;
+			sourceTree = "<group>";
+		};
+		6F7781661F1DF01B00409CD7 /* GuessTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F7781671F1DF01B00409CD7 /* GuessTests.swift */,
+				6F7781691F1DF01B00409CD7 /* Info.plist */,
+			);
+			path = GuessTests;
+			sourceTree = "<group>";
+		};
+		6F7781701F1DF01B00409CD7 /* Guess WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6F7781711F1DF01B00409CD7 /* Interface.storyboard */,
+				6F7781741F1DF01B00409CD7 /* Assets.xcassets */,
+				6F7781761F1DF01B00409CD7 /* Info.plist */,
+			);
+			path = "Guess WatchKit App";
+			sourceTree = "<group>";
+		};
+		6F77817F1F1DF01C00409CD7 /* Guess WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6F7781801F1DF01C00409CD7 /* InterfaceController.swift */,
+				6F7781821F1DF01C00409CD7 /* ExtensionDelegate.swift */,
+				6F7781841F1DF01C00409CD7 /* Assets.xcassets */,
+				6F7781861F1DF01C00409CD7 /* Info.plist */,
+			);
+			path = "Guess WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F77814E1F1DF01B00409CD7 /* Guess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7781911F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "Guess" */;
+			buildPhases = (
+				6F77814B1F1DF01B00409CD7 /* Sources */,
+				6F77814C1F1DF01B00409CD7 /* Frameworks */,
+				6F77814D1F1DF01B00409CD7 /* Resources */,
+				6F7781901F1DF01C00409CD7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F77816F1F1DF01B00409CD7 /* PBXTargetDependency */,
+			);
+			name = Guess;
+			productName = Guess;
+			productReference = 6F77814F1F1DF01B00409CD7 /* Guess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F7781621F1DF01B00409CD7 /* GuessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7781941F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "GuessTests" */;
+			buildPhases = (
+				6F77815F1F1DF01B00409CD7 /* Sources */,
+				6F7781601F1DF01B00409CD7 /* Frameworks */,
+				6F7781611F1DF01B00409CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F7781651F1DF01B00409CD7 /* PBXTargetDependency */,
+			);
+			name = GuessTests;
+			productName = GuessTests;
+			productReference = 6F7781631F1DF01B00409CD7 /* GuessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F77816B1F1DF01B00409CD7 /* Guess WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F77818D1F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "Guess WatchKit App" */;
+			buildPhases = (
+				6F77816A1F1DF01B00409CD7 /* Resources */,
+				6F77818C1F1DF01C00409CD7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F77817E1F1DF01C00409CD7 /* PBXTargetDependency */,
+			);
+			name = "Guess WatchKit App";
+			productName = "Guess WatchKit App";
+			productReference = 6F77816C1F1DF01B00409CD7 /* Guess WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6F77817A1F1DF01C00409CD7 /* Guess WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7781891F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "Guess WatchKit Extension" */;
+			buildPhases = (
+				6F7781771F1DF01C00409CD7 /* Sources */,
+				6F7781781F1DF01C00409CD7 /* Frameworks */,
+				6F7781791F1DF01C00409CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guess WatchKit Extension";
+			productName = "Guess WatchKit Extension";
+			productReference = 6F77817B1F1DF01C00409CD7 /* Guess WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F7781471F1DF01B00409CD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TommyTsui;
+				TargetAttributes = {
+					6F77814E1F1DF01B00409CD7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Q9LK2NCM8;
+						ProvisioningStyle = Automatic;
+					};
+					6F7781621F1DF01B00409CD7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Q9LK2NCM8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F77814E1F1DF01B00409CD7;
+					};
+					6F77816B1F1DF01B00409CD7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Q9LK2NCM8;
+						ProvisioningStyle = Automatic;
+					};
+					6F77817A1F1DF01C00409CD7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2Q9LK2NCM8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6F77814A1F1DF01B00409CD7 /* Build configuration list for PBXProject "Guess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F7781461F1DF01B00409CD7;
+			productRefGroup = 6F7781501F1DF01B00409CD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F77814E1F1DF01B00409CD7 /* Guess */,
+				6F7781621F1DF01B00409CD7 /* GuessTests */,
+				6F77816B1F1DF01B00409CD7 /* Guess WatchKit App */,
+				6F77817A1F1DF01C00409CD7 /* Guess WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F77814D1F1DF01B00409CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F77815D1F1DF01B00409CD7 /* LaunchScreen.storyboard in Resources */,
+				6F77815A1F1DF01B00409CD7 /* Assets.xcassets in Resources */,
+				6F7781581F1DF01B00409CD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7781611F1DF01B00409CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F77816A1F1DF01B00409CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7781751F1DF01B00409CD7 /* Assets.xcassets in Resources */,
+				6F7781731F1DF01B00409CD7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7781791F1DF01C00409CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7781851F1DF01C00409CD7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F77814B1F1DF01B00409CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7781551F1DF01B00409CD7 /* ViewController.swift in Sources */,
+				6F7781531F1DF01B00409CD7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F77815F1F1DF01B00409CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7781681F1DF01B00409CD7 /* GuessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7781771F1DF01C00409CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7781831F1DF01C00409CD7 /* ExtensionDelegate.swift in Sources */,
+				6F7781811F1DF01C00409CD7 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F7781651F1DF01B00409CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F77814E1F1DF01B00409CD7 /* Guess */;
+			targetProxy = 6F7781641F1DF01B00409CD7 /* PBXContainerItemProxy */;
+		};
+		6F77816F1F1DF01B00409CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F77816B1F1DF01B00409CD7 /* Guess WatchKit App */;
+			targetProxy = 6F77816E1F1DF01B00409CD7 /* PBXContainerItemProxy */;
+		};
+		6F77817E1F1DF01C00409CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F77817A1F1DF01C00409CD7 /* Guess WatchKit Extension */;
+			targetProxy = 6F77817D1F1DF01C00409CD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F7781561F1DF01B00409CD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7781571F1DF01B00409CD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F77815B1F1DF01B00409CD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F77815C1F1DF01B00409CD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6F7781711F1DF01B00409CD7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7781721F1DF01B00409CD7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F7781871F1DF01C00409CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F7781881F1DF01C00409CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F77818A1F1DF01C00409CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				INFOPLIST_FILE = "Guess WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.Guess.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		6F77818B1F1DF01C00409CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				INFOPLIST_FILE = "Guess WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.Guess.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		6F77818E1F1DF01C00409CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				IBSC_MODULE = Guess_WatchKit_Extension;
+				INFOPLIST_FILE = "Guess WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.Guess.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		6F77818F1F1DF01C00409CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				IBSC_MODULE = Guess_WatchKit_Extension;
+				INFOPLIST_FILE = "Guess WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.Guess.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		6F7781921F1DF01C00409CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				INFOPLIST_FILE = Guess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.Guess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6F7781931F1DF01C00409CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				INFOPLIST_FILE = Guess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.Guess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6F7781951F1DF01C00409CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				INFOPLIST_FILE = GuessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.GuessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess.app/Guess";
+			};
+			name = Debug;
+		};
+		6F7781961F1DF01C00409CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2Q9LK2NCM8;
+				INFOPLIST_FILE = GuessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mooee.GuessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess.app/Guess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F77814A1F1DF01B00409CD7 /* Build configuration list for PBXProject "Guess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7781871F1DF01C00409CD7 /* Debug */,
+				6F7781881F1DF01C00409CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F7781891F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "Guess WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F77818A1F1DF01C00409CD7 /* Debug */,
+				6F77818B1F1DF01C00409CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F77818D1F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "Guess WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F77818E1F1DF01C00409CD7 /* Debug */,
+				6F77818F1F1DF01C00409CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F7781911F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "Guess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7781921F1DF01C00409CD7 /* Debug */,
+				6F7781931F1DF01C00409CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F7781941F1DF01C00409CD7 /* Build configuration list for PBXNativeTarget "GuessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7781951F1DF01C00409CD7 /* Debug */,
+				6F7781961F1DF01C00409CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F7781471F1DF01B00409CD7 /* Project object */;
+}
